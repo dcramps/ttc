@@ -9,13 +9,6 @@
 #import "FooterView.h"
 #import "UIColor+TicketSim.h"
 
-@interface FooterView ()
-
-@property BOOL isGrey;
-
-
-@end
-
 @implementation FooterView
 
 - (void)awakeFromNib

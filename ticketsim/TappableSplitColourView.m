@@ -14,6 +14,7 @@
 @property (nonatomic, strong) CALayer *upperLayer;
 @property (nonatomic, strong) CALayer *lowerLayer;
 @property (nonatomic, strong) CALayer *highlightLayer;
+
 @end
 
 @implementation TappableSplitColourView

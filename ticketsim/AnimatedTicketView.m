@@ -8,6 +8,7 @@
 
 #import "AnimatedTicketView.h"
 #import "UIColor+TicketSim.h"
+#import "UIImage+TicketSim.h"
 
 static const CGFloat kAnimationDuration = 4.0f;
 static const NSInteger kLogoCount = 3.0f;
@@ -46,7 +47,7 @@ static const CGFloat kDelay = kAnimationDuration/kLogoCount;
     CGFloat targetHeight = height * imageRatio;
     CGSize newSize = CGSizeMake(ttc.size.width * (targetHeight / ttc.size.height), targetHeight);
 
-    UIImage *image = [self.class imageWithImage:ttc scaledToSize:newSize];
+    UIImage *image = [UIImage imageWithImage:ttc scaledToSize:newSize];
     
     self.layer.masksToBounds = YES;
     
@@ -61,14 +62,6 @@ static const CGFloat kDelay = kAnimationDuration/kLogoCount;
     }
     
     self.maskAdded = YES;
-}
-
-+ (UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize {
-    UIGraphicsBeginImageContextWithOptions(newSize, NO, 0.0);
-    [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
-    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return newImage;
 }
 
 - (CABasicAnimation *)imageAnimationWithLayer:(CALayer *)layer

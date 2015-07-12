@@ -19,6 +19,7 @@
 		43330C811B51F1D3009223EE /* FooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43330C801B51F1D3009223EE /* FooterView.m */; };
 		43330C841B51F474009223EE /* TappableSplitColourView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43330C831B51F474009223EE /* TappableSplitColourView.m */; };
 		43330C871B51F628009223EE /* AnimatedTicketView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43330C861B51F628009223EE /* AnimatedTicketView.m */; };
+		43330C8E1B523139009223EE /* UIImage+TicketSim.m in Sources */ = {isa = PBXBuildFile; fileRef = 43330C8D1B523139009223EE /* UIImage+TicketSim.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		43330C831B51F474009223EE /* TappableSplitColourView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TappableSplitColourView.m; sourceTree = "<group>"; };
 		43330C851B51F628009223EE /* AnimatedTicketView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedTicketView.h; sourceTree = "<group>"; };
 		43330C861B51F628009223EE /* AnimatedTicketView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedTicketView.m; sourceTree = "<group>"; };
+		43330C8C1B523139009223EE /* UIImage+TicketSim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TicketSim.h"; sourceTree = "<group>"; };
+		43330C8D1B523139009223EE /* UIImage+TicketSim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TicketSim.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +153,8 @@
 			children = (
 				43330C7C1B51E812009223EE /* UIColor+TicketSim.h */,
 				43330C7D1B51E812009223EE /* UIColor+TicketSim.m */,
+				43330C8C1B523139009223EE /* UIImage+TicketSim.h */,
+				43330C8D1B523139009223EE /* UIImage+TicketSim.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -285,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43330C531B51BE29009223EE /* ViewController.m in Sources */,
+				43330C8E1B523139009223EE /* UIImage+TicketSim.m in Sources */,
 				43330C871B51F628009223EE /* AnimatedTicketView.m in Sources */,
 				43330C501B51BE29009223EE /* AppDelegate.m in Sources */,
 				43330C721B51C39D009223EE /* AnimatedHeaderView.m in Sources */,
@@ -488,6 +494,7 @@
 				43330C6C1B51BE29009223EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		43330C6D1B51BE29009223EE /* Build configuration list for PBXNativeTarget "ticketsimTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +503,7 @@
 				43330C6F1B51BE29009223EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
